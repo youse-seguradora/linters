@@ -5,6 +5,9 @@ UncommunicativeMethodName:
   reject:
   - !ruby/regexp /^[a-z]$/
   - !ruby/regexp /[0-9]$/
+UncommunicativeModuleName:
+  accept:
+    - !ruby/regexp /^\AV\d+\z/
 UncommunicativeParameterName:
   reject:
   - !ruby/regexp /^.$/
