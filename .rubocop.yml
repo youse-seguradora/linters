@@ -9,22 +9,35 @@ AllCops:
 Rails:
   Enabled: true
 
-Style/AlignParameters:
+Layout/AlignParameters:
   EnforcedStyle: with_fixed_indentation
 
-Style/CaseIndentation:
+Layout/CaseIndentation:
   EnforcedStyle: end
 
-Style/AsciiComments:
+Layout/IndentHash:
   Enabled: false
 
-Style/IndentHash:
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: false
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Layout/AlignHash:
+  Enabled: true
+  EnforcedLastArgumentHashStyle: always_ignore
+
+Style/AsciiComments:
   Enabled: false
 
 Style/CollectionMethods:
   Enabled: true
   PreferredMethods:
-      inject: 'inject'
+    inject: 'inject'
 
 Style/Documentation:
   Enabled: false
@@ -41,9 +54,6 @@ Style/GuardClause:
   Enabled: false
 
 Style/IfUnlessModifier:
-  Enabled: false
-
-Style/SpaceInsideHashLiteralBraces:
   Enabled: false
 
 Style/Lambda:
@@ -79,21 +89,11 @@ Lint/EndAlignment:
 Style/FormatString:
   Enabled: false
 
-Style/MultilineMethodCallIndentation:
-  EnforcedStyle: indented
-
-Style/MultilineOperationIndentation:
-  EnforcedStyle: indented
-
 Style/WordArray:
   Enabled: false
 
 Style/RedundantSelf:
   Enabled: false
-
-Style/AlignHash:
-  Enabled: true
-  EnforcedLastArgumentHashStyle: always_ignore
 
 Style/TrivialAccessors:
   AllowPredicates: true
