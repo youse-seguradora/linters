@@ -89,6 +89,9 @@ Lint/EndAlignment:
 Style/FormatString:
   Enabled: false
 
+Style/FormatStringToken:
+  EnforcedStyle: template
+
 Style/WordArray:
   Enabled: false
 
