@@ -1,5 +1,4 @@
 AllCops:
-  TargetRubyVersion: 2.3
   Exclude:
     - 'bin/**/*'
     - 'db/**/*'
@@ -100,10 +99,3 @@ Style/RedundantSelf:
 
 Style/TrivialAccessors:
   AllowPredicates: true
-
-Style/FrozenStringLiteralComment:
-  EnforcedStyle: when_needed
-  SupportedStyles:
-    # possible that this will create errors in Ruby 2.3.0+.
-    - always
-    - when_needed
