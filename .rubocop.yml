@@ -31,6 +31,9 @@ Layout/AlignHash:
   Enabled: true
   EnforcedLastArgumentHashStyle: always_ignore
 
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
+
 Style/AsciiComments:
   Enabled: false
 
@@ -82,9 +85,6 @@ Metrics/MethodLength:
 
 Style/SingleLineBlockParams:
   Enabled: false
-
-Lint/EndAlignment:
-  EnforcedStyleAlignWith: variable
 
 Style/FormatString:
   Enabled: false
