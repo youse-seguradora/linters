@@ -7,7 +7,7 @@ UncommunicativeMethodName:
   - !ruby/regexp /[0-9]$/
 UncommunicativeModuleName:
   accept:
-    - !ruby/regexp /^\AV\d+\z/
+    - !ruby/regexp /\bV\d+\b/
 UncommunicativeParameterName:
   reject:
   - !ruby/regexp /^.$/
@@ -53,4 +53,3 @@ InstanceVariableAssumption:
     enabled: false
   UtilityFunction:
     enabled: false
-
