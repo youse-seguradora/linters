@@ -1,8 +1,8 @@
 /*eslint-env node*/
 module.exports = {
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module"
+  'parserOptions': {
+    'ecmaVersion': 6,
+    'sourceType': 'module'
   },
   'globals': {
     'accounting': true,
@@ -19,7 +19,9 @@ module.exports = {
   'env': {
     'browser': true,
     'amd': true,
-    'jquery': true
+    'jquery': true,
+    'node': true,
+    'mocha': true
   },
   'rules': {
     'camelcase': 2,
@@ -41,6 +43,12 @@ module.exports = {
     'no-underscore-dangle': 0,
     'no-void': 2,
     'quotes': [2, 'single'],
-    'semi': [2, 'always']
+    'semi': [2, 'always'],
+    'keyword-spacing': ['error', { 'before': true, 'after': true}],
+    'space-before-blocks': 2,
+    'space-infix-ops': 2,
+    'padded-blocks': ['error', 'never'],
+    'space-in-parens': 2,
+    'comma-spacing': [2, { 'before': false, 'after': true }]
   }
 };
